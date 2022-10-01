@@ -1,14 +1,36 @@
 import { Database, PostgresConnector } from "denodb";
+import { PostgresClient } from "denodb/deps";
 
 import models from "@/models/index.ts";
 import config from "@/utils/config.ts";
 
 const connector = new PostgresConnector(config.db);
-const db = new Database(connector);
 
-db.link(models);
+export const db = new Database({
+  connector,
+  // TODO: load this value from env
+  // debug: true,
+});
+
+export async function transaction(block: () => Promise<void>): Promise<void> {
+  const client = db["_connector"]["_client"] as PostgresClient;
+  const transaction = client.createTransaction("transaction");
+  db["_connector"]["_client"] = transaction;
+
+  await transaction.begin();
+  await block();
+  await transaction.commit();
+
+  db["_connector"]["_client"] = client;
+
+  // Waiting for a fix of DenoDB
+  // return this.client.transaction(block) as Promise<void>;
+}
 
 export default () => {
-  // TODO: enable this when there is a model change...
-  db.sync({ drop: config.environment === "development" });
+  db.link(models);
+  // db.sync({
+  //   // TODO: enable this when there is a model change...
+  //   drop: config.environment === "development",
+  // });
 };

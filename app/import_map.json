@@ -6,6 +6,7 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "denoauth": "https://deno.land/x/denoauth@v1.0.6/mod.ts",
     "denodb": "https://deno.land/x/denodb@v1.0.39/mod.ts",
+    "denodb/deps": "https://deno.land/x/denodb@v1.0.39/deps.ts",
     "preact": "https://esm.sh/preact@10.11.0",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
     "preact/": "https://esm.sh/preact@10.11.0/",

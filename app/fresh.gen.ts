@@ -8,7 +8,7 @@ import * as $1 from "./routes/api/users.ts";
 import * as $2 from "./routes/auth/[provider]/callback.tsx";
 import * as $3 from "./routes/auth/[provider]/index.tsx";
 import * as $4 from "./routes/index.tsx";
-import * as $$0 from "./islands/Counter.tsx";
+import * as $$0 from "./islands/FreshMap.tsx";
 import * as $$1 from "./islands/Users.tsx";
 
 const manifest = {
@@ -20,7 +20,7 @@ const manifest = {
     "./routes/index.tsx": $4,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
+    "./islands/FreshMap.tsx": $$0,
     "./islands/Users.tsx": $$1,
   },
   baseUrl: import.meta.url,

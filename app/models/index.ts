@@ -7,6 +7,7 @@ import User from "@/models/User.ts";
 
 const models = [User, SocialProfile, SpotList, Spot];
 
+// TODO: FK relationships attempt to create every run... fix that
 Relationships.belongsTo(SocialProfile, User, { foreignKey: "user_id" });
 
 Relationships.belongsTo(SpotList, User, { foreignKey: "user_id" });

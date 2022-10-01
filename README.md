@@ -38,8 +38,8 @@ The code is in the [app](/app/) directory. See the README there for setup direct
   * [x] Figure out DenoAuth
   * [x] Design the Database
 * Day 3 - (August 5th 2022)
-  * [ ] Config schema validation
-  * [ ] Define our Models...
+  * [x] Config schema validation
+  * [x] Define our Models...
     * User
     * Social Profile
     * Spot List
