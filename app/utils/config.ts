@@ -8,8 +8,8 @@ import EnvironmentVariableNames from "@/constants/EnvironmentVariableNames.ts";
 import { Config, ConfigSchema } from "@/schemas/Config.ts";
 
 const envConfig: Config = {
-  base_url:
-    Deno.env.get(EnvironmentVariableNames.BASE_URL) || "http://localhost:8000",
+  base_url: Deno.env.get(EnvironmentVariableNames.BASE_URL) ||
+    "http://localhost:8000",
   environment: Deno.env.get(EnvironmentVariableNames.DENO_ENV) || "",
   db: {
     database: Deno.env.get(EnvironmentVariableNames.DB_NAME) || "",

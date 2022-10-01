@@ -20,7 +20,7 @@ class JsonResponse extends Response {
 
 export const handler = async (
   _req: Request,
-  _ctx: HandlerContext
+  _ctx: HandlerContext,
 ): Promise<Response> => {
   const user = await User.create({});
   return new JsonResponse(user);

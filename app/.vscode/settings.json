@@ -14,5 +14,10 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "eslint.enable": false
+  "eslint.enable": false,
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": false
 }

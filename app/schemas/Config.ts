@@ -3,7 +3,7 @@ import { z } from "zod";
 import EnvironmentVariableNames from "@/constants/EnvironmentVariableNames.ts";
 
 const getErrorMessage = (
-  environmentVariableNames: EnvironmentVariableNames
+  environmentVariableNames: EnvironmentVariableNames,
 ) => {
   return {
     message: `Missing ${environmentVariableNames} environment variable.`,
@@ -39,7 +39,7 @@ export const ConfigSchema = z.object({
         .string()
         .min(
           1,
-          getErrorMessage(EnvironmentVariableNames.DISCORD_CLIENT_SECRET)
+          getErrorMessage(EnvironmentVariableNames.DISCORD_CLIENT_SECRET),
         ),
     }),
   }),
