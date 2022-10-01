@@ -1,6 +1,6 @@
 # fresh project
 
-### Install Deno
+## Install Deno
 
 This project uses Deno! Install for your OS by following the instructions
 [here](https://deno.land/#installation)
@@ -18,7 +18,7 @@ Update the values accordingly (if using Docker, the values can stay as is).
 Discord client id and secret can be acquired
 [here](https://discord.com/developers/applications).
 
-### Database
+## Database
 
 If using Docker, you can run from this directory to spin up a postgres database:
 
@@ -26,11 +26,11 @@ If using Docker, you can run from this directory to spin up a postgres database:
 docker-compose start
 ```
 
-### Usage
+## Usage
 
 Start the project (this will install dependencies on first run):
 
-```
+```sh
 deno task start
 ```
 
