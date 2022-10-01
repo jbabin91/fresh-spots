@@ -45,7 +45,19 @@ The code is in the [app](/app/) directory. See the README there for setup direct
     * Spot List
     * Spot
   * [ ] Allow users to login and logout
+    * [ ] Login
+      * [x] If we have not seen a user before, insert
+      * [x] If we have seen a user before, update
+      * [ ] Issue a cookie
   * [ ] Show a map on the home page
+    * [x] with hacks
+    * [ ] have external SPA that gets loaded into an island dynamically
+      * [ ] maybe a pr to fresh? client side only code
+* Day 4 - August 12th
+  * [ ] Do we nuke this project?
+    * Reasons
+    * [ ] outdated / unmaintained libs (denodb, denoauth)
+    * [ ] pure client side JS hard to accomplish
 
 ## Stretch Features
 
