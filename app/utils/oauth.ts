@@ -1,5 +1,5 @@
 // TODO: PR denoauth to fix README
-import { DiscordClient } from "https://deno.land/x/denoauth@v1.0.6/mod.ts";
+import { DiscordClient } from "denoauth";
 
 import config from "@/utils/config.ts";
 
