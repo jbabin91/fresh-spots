@@ -1,9 +1,6 @@
-import {
-  Database,
-  PostgresConnector,
-} from "https://deno.land/x/denodb@v1.0.39/mod.ts";
-import models from "../models/index.ts";
-import config from "./config.ts";
+import models from "@/models/index.ts";
+import config from "@/utils/config.ts";
+import { Database, PostgresConnector } from "denodb";
 
 const connector = new PostgresConnector(config.db);
 const db = new Database(connector);

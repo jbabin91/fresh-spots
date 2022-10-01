@@ -1,5 +1,5 @@
+import { Button } from "@/components/Button.tsx";
 import { useState } from "preact/hooks";
-import { Button } from "../components/Button.tsx";
 
 interface CounterProps {
   start: number;

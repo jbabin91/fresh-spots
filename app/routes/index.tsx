@@ -1,6 +1,9 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import Counter from "../islands/Counter.tsx";
-import User from "../models/User.ts";
+import Counter from "@/islands/Counter.tsx";
+import User from "@/models/User.ts";
+import oauth from "@/utils/oauth.ts";
+
+console.log(oauth);
 
 export const handler: Handlers<User[]> = {
   async GET(_, ctx) {
