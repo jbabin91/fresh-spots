@@ -1,14 +1,4 @@
-import { Handlers } from "$fresh/server.ts";
-
 import FreshMap from "@/islands/FreshMap.tsx";
-import User from "@/models/User.ts";
-
-export const handler: Handlers<User[]> = {
-  async GET(_, ctx) {
-    const users = await User.all();
-    return ctx.render(users);
-  },
-};
 
 export default function Home() {
   return (

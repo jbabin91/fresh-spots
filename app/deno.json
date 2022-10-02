@@ -6,6 +6,9 @@
   "importMap": "./import_map.json",
   "tasks": {
     "flint": "deno fmt && deno lint",
+    "migrate": "deno run --allow-read --allow-env --allow-net ./db/migrate.ts",
+    "migrate:down": "deno task migrate --down",
+    "migrate:up": "deno task migrate --up",
     "start": "deno run --allow-env -A --watch=static/,routes/ dev.ts"
   }
 }

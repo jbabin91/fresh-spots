@@ -4,6 +4,7 @@
     "denoauth",
     "denodb",
     "favoriting",
+    "kysely",
     "upvoted"
   ]
 }

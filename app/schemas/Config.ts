@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "@/deps.ts";
 
 import EnvironmentVariableNames from "@/constants/EnvironmentVariableNames.ts";
 
@@ -17,6 +17,7 @@ export const ConfigSchema = z.object({
   environment: z
     .string()
     .min(1, getErrorMessage(EnvironmentVariableNames.DENO_ENV)),
+  db_uri: z.string(),
   db: z.object({
     host: z.string().min(1, getErrorMessage(EnvironmentVariableNames.DB_HOST)),
     username: z

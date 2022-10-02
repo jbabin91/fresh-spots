@@ -5,13 +5,14 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "denoauth": "https://deno.land/x/denoauth@v1.0.6/mod.ts",
-    "denodb": "https://deno.land/x/denodb@v1.0.39/mod.ts",
-    "denodb/deps": "https://deno.land/x/denodb@v1.0.39/deps.ts",
+    "dotenv": "https://deno.land/std@0.150.0/dotenv/mod.ts",
+    "leaflet": "https://esm.sh/v90/@types/leaflet@1.7.11/index.d.ts",
+    "path": "https://deno.land/std@0.152.0/path/mod.ts",
     "preact": "https://esm.sh/preact@10.11.0",
+    "preact-leaflet-ts": "https://esm.sh/preact-leaflet-ts@0.1.8",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
     "preact/": "https://esm.sh/preact@10.11.0/",
     "twind": "https://esm.sh/twind@0.16.17",
-    "twind/": "https://esm.sh/twind@0.16.17/",
-    "zod": "https://deno.land/x/zod@v3.19.1/mod.ts"
+    "twind/": "https://esm.sh/twind@0.16.17/"
   }
 }

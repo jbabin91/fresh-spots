@@ -10,8 +10,8 @@
 
 * Backend Framework
   * [Deno + Fresh](https://fresh.deno.dev/)
-* ORM
-  * [DenoDB](https://eveningkid.com/denodb-docs/)
+* Database Access
+  * [Kysely](https://koskimas.github.io/kysely/)
 * Auth
   * [DenoAuth](https://www.denoauth.org/docs)
 
@@ -30,6 +30,7 @@ The code is in the [app](/app/) directory. See the README there for setup direct
     * [x] Docker Postgres
   * [x] Create a users table
   * [x] At least 1 route that returns data from DB
+
 * Day 2
   * [x] Update the README
   * [x] use dotenv from std library
@@ -37,6 +38,7 @@ The code is in the [app](/app/) directory. See the README there for setup direct
   * [x] Use source maps everywhere...
   * [x] Figure out DenoAuth
   * [x] Design the Database
+
 * Day 3 - (August 5th 2022)
   * [x] Config schema validation
   * [x] Define our Models...
@@ -54,17 +56,23 @@ The code is in the [app](/app/) directory. See the README there for setup direct
     * [ ] have external SPA that gets loaded into an island dynamically
       * [ ] maybe a pr to fresh? client side only code
 * Day 4 - August 12th
-  * [ ] Do we nuke this project?
-    * Reasons
-    * [ ] outdated / unmaintained libs (denodb, denoauth)
-    * [ ] pure client side JS hard to accomplish
+  * [x] Setup Kysely Connection
+  * [x] Setup DB Models with Kysely
+  * [x] Setup DB migrations... with Kysely
+
+* Day 5 - August 19th
+  * [ ] Replace DenoAuth with DenoGrant
+  * [ ] Login
+    * [ ] Issue a Cookie
+      * Make sure cookie is signed
+    * [ ] Figure out sessions
+  * [ ] Get a Proper map on the page
 
 ## Stretch Features
 
 * Comments on lists
 * Favoriting / staring lists
 * Posting pictures of food / events at the spots
-
 * Lists can have a header / background image
 * User profile that shows all the lists they've created
 * Lists can be upvoted
